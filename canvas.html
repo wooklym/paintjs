@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paint</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="./lib/colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+    
+    <script src="./js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./lib/colorpicker/js/colorpicker.js"></script>
+    <script type="text/javascript" src="./js/paint.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            Paint.initialize();
+       })
+    </script>
+</head>
+<body>
+    <div id="tools">
+        <p><button id="reset">RESET</button></p>
+        <p>Select Pen Color</p>
+        <div id="colorSelector"><div style="background-color: #0000ff"></div></div>
+    </div>
+    <div>
+        <p>Pen Preview</p>
+        <canvas id="preview" width="100" height="50" style=" border: 1px solid #000; "></canvas>
+    </div>
+    <div>
+        <p>Canvas</p>
+        <canvas id="canvas" width="500" height="500" style=" border: 1px solid #000; "></canvas>
+    </div>
+</body>
+
+
+</html>
